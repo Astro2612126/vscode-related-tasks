@@ -1,0 +1,102 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.muhad {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    gap: 10px;
+    border-radius: 10px; 
+    background-color: cyan;
+    overflow: hidden;
+}
+.header {
+    width: 100%;
+    background-color:pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+img{
+
+    margin-top: 20px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+
+.footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    background-color: pink;
+    width: 100%;
+    overflow: hidden;s
+}
+
+.html-button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    padding: 15px 0;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.html-button:hover {
+    background-color: #ffb0bd;
+}
+
+
+input{
+    width: 200px;
+    height: 20px;
+    border: hidden;
+    overflow: hidden;
+    border-radius: 10px;
+}
+button{
+    width: 100px;
+    border: hidden;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+button:hover{
+    background-color: pink;
+}
+
+i{
+    cursor: pointer;
+}
+
+
+body:has(#close:checked) .muhad{
+    display: none;
+}
+
+
+#close{
+    display: none;
+}
+
+
+body:has(#close:checked) #close {
+    display: block;
+}
